@@ -1,0 +1,92 @@
+
+/* Base Navbar (Desktop) */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 60%;
+  margin: 2rem auto 4rem auto;
+
+  padding: 1rem 0;
+  border-bottom: 2px solid white;
+
+}
+
+/* Left: Logo */
+.navbar a:first-child div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar img {
+  height: 36px;
+  border-radius: 50%;
+}
+
+.navbar h3 {
+  color: white;
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Right: Links */
+.navbar > div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.navbar p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar h3:hover,
+.navbar p:hover {
+  text-decoration: underline;
+}
+
+
+/*  Tablet */
+@media (max-width: 900px) {
+  .navbar {
+    width: 60%;
+  }
+
+  .navbar > div:last-child {
+    gap: 1.5rem;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    width: 60%;
+    padding: 1rem 0;
+  }
+
+  /* Center logo */
+  .navbar a:first-child div {
+    justify-content: center;
+  }
+
+  /* Stack links */
+  .navbar > div:last-child {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .navbar p {
+    font-size: 15px;
+  }
+}
